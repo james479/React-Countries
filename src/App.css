@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+/* color variables */
+:root {
+  /* dark mode elements */
+  --color-dark-blue: hsl(209, 23%, 22%); 
+   /*dark mode background  */
+  --color-very-dark-blue: hsl(207, 26%, 17%);
+  /* light mode gext */
+  --color-very-dark-blue-light: hsl(200, 15%, 8%);
+  /* light mode background */
+  --color-dark-gray: hsl(0, 0%, 52%);
+  /* light mode background */
+  --color-very-light-gray: hsl(0, 0%, 98%);
+  /* dark mode text and light mode elemenets */
+  --color-white: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*************** main page styles ********************/
+.main-page {
+  font-size: .875rem;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*************** topbar styles *******************/
+.topbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2rem 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+/*************** toggle button styles ***********/
+.toggle-dark-mode-button {
+  background-color: transparent;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggle-dark-mode-button span {
+  margin-left: .5rem;
+}
+
+/*************** Search bar styles ***************/
+.search-bar-container {
+  margin-top: 1.8rem;
+}
+
+.search-bar {
+  width: 90%;
+  height: 3.5rem;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.search-bar-dark {
+  background-color: hsl(209, 22%, 22%);
+}
+
+.search-bar-light {
+  background-color: hsl(0, 0, 80%);
+}
+
+::placeholder {
+  padding-left: 2rem;
+  
 }
