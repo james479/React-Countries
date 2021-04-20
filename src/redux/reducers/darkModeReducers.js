@@ -1,6 +1,10 @@
 import { TOOGLE_DARK_MODE } from "../constants/toggleDarkModeConstants";
 
-export const darkModeReducer = (state = { darkMode: true }, { type }) => {
+const initialState = {
+  darkMode: true,
+};
+
+export const darkModeReducer = (state = initialState, { type }) => {
   switch (type) {
     case TOOGLE_DARK_MODE:
       return {

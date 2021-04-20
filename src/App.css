@@ -17,7 +17,17 @@
 /*************** main page styles ********************/
 .main-page {
   font-size: .875rem;
-  height: 100vh;
+}
+
+/*********** styles for dark and light mode  ***************/
+.dark-mode {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+}
+
+.light-mode {
+  background-color: hsl(0, 0%, 90%);
+  color: hsl(200, 15%, 8%),
 }
 
 /*************** topbar styles *******************/
@@ -64,4 +74,33 @@
 ::placeholder {
   padding-left: 2rem;
   
+}
+
+/************** country card styles ******************/
+
+.country-detail-card {
+  margin-top: 2rem;
+  
+}
+
+.country-detail-card img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.country-details {
+  margin-left: 3rem;
+  background-color: hsl(209, 23%, 22%);
+  width: 80%;
+}
+
+
+.country-name {
+  font-size: 1.2rem;
+  padding: 1.3rem 0;
+}
+
+p strong {
+  margin-right: .4rem;
 }

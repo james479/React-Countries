@@ -4,20 +4,15 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import { darkModeReducer } from "./reducers/darkModeReducers";
 import { countryListReducer } from "./reducers/countryReducers";
 
-const reducer = combineReducers({
+const rootReducer = combineReducers({
   darkMode: darkModeReducer,
   countryList: countryListReducer,
 });
 
-const initialState = {
-  darkMode: false,
-};
-
 const middleware = [thunk];
 
 const store = createStore(
-  reducer,
-  initialState,
+  rootReducer,
   composeWithDevTools(applyMiddleware(...middleware))
 );
 

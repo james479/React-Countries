@@ -3,10 +3,14 @@ import {
   COUNTRY_LIST_SUCCESS,
 } from "../constants/countryConstants";
 
-export const countryListReducer = (
-  state = { countries: [] },
-  { type, payload }
-) => {
+const initialState = {
+  countries: [],
+  countryDetail: {},
+  loading: false,
+  error: false,
+};
+
+export const countryListReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case COUNTRY_LIST_REQUEST:
       return {
