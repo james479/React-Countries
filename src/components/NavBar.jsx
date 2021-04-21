@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import ToggleDarkModeButton from "./ToggleDarkModeButton";
 
-const TopBar = () => {
+const NavBar = () => {
   const darkModeState = useSelector((state) => state.darkMode);
   const { darkMode } = darkModeState;
   const background = {
@@ -24,4 +24,4 @@ const TopBar = () => {
   );
 };
 
-export default TopBar;
+export default NavBar;

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { listCountries } from "../redux/actions/countriesActions";
 import SearchBar from "../components/SearchBar";
-import TopBar from "../components/TopBar";
+import NavBar from "../components/NavBar";
 import CountryList from "../components/CountryList";
 
 const MainPage = () => {
@@ -15,7 +15,7 @@ const MainPage = () => {
 
   return (
     <main className={`main-page ${darkMode ? "dark-mode" : "light-mode"}`}>
-      <TopBar />
+      <NavBar />
       <SearchBar />
       <CountryList />
     </main>

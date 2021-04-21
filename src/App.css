@@ -1,18 +1,4 @@
-/* color variables */
-:root {
-  /* dark mode elements */
-  --color-dark-blue: hsl(209, 23%, 22%); 
-   /*dark mode background  */
-  --color-very-dark-blue: hsl(207, 26%, 17%);
-  /* light mode gext */
-  --color-very-dark-blue-light: hsl(200, 15%, 8%);
-  /* light mode background */
-  --color-dark-gray: hsl(0, 0%, 52%);
-  /* light mode background */
-  --color-very-light-gray: hsl(0, 0%, 98%);
-  /* dark mode text and light mode elemenets */
-  --color-white: hsl(0, 0%, 100%);
-}
+/* mobile first */
 
 /*************** main page styles ********************/
 .main-page {
@@ -79,20 +65,20 @@
 /************** country card styles ******************/
 
 .country-detail-card {
-  margin-top: 2rem;
-  
+  margin: 2rem auto 0 auto;
+  width: 80%;
 }
 
 .country-detail-card img {
-  width: 80%;
+  width: 100%;
   display: block;
-  margin: 0 auto;
+
 }
 
 .country-details {
-  margin-left: 3rem;
   background-color: hsl(209, 23%, 22%);
-  width: 80%;
+  width: 100%;
+  padding: 1.3rem 0 3rem 1.7rem;
 }
 
 
@@ -101,6 +87,8 @@
   padding: 1.3rem 0;
 }
 
-p strong {
+p span {
   margin-right: .4rem;
+  font-weight: 600;
+  line-height: 1.5rem;
 }

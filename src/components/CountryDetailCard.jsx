@@ -1,25 +1,26 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import { numberWithCommas } from "../utilities/numberWithCommas";
 
 const CountryDetailCard = ({ flag, name, population, region, capital }) => {
   return (
-    <div href="#" className="country-detail-card">
+    <article href="#" className="country-detail-card">
       <img src={flag} alt={name} />
       <div className="country-details">
         <h4 className="country-name">{name}</h4>
         <p>
-          <strong>Population:</strong> {population}
+          <span>Population:</span> {numberWithCommas(population)}
         </p>
         <p>
-          <strong>Region:</strong>
+          <span>Region:</span>
           {region}
         </p>
         <p>
-          <strong>Capitol:</strong>
+          <span>Capitol:</span>
           {capital}
         </p>
       </div>
-    </div>
+    </article>
   );
 };
 
